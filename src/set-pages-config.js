@@ -34,7 +34,8 @@ function getConfigParserSettings({ staticSiteGenerator, generatorConfigFile, sit
 
           // Disable server side image optimization too
           // https://nextjs.org/docs/api-reference/next/image#unoptimized
-          'experimental.images.unoptimized': true
+          // Update: remove experimental key
+          'images.unoptimized': true
         }
       }
     case 'gatsby':
